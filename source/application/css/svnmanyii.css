@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+.pathback{
+	padding-left:3px;
+	padding-right:5px;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	vertical-align: middle;
+	color: #035584;
+}
+
+.pathback img{
+    vertical-align:middle;
+	width:16px;
+	height:16px;
+}
+
+.pathcurrentfolder
+{
+	padding-left:3px;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	vertical-align: middle;
+
+	color:#0066b0;
+	text-decoration:none;
+	padding-right:10px;
+	cursor: default;
+}
+
+.pathcurrentfolder img{
+    vertical-align:middle;
+	width:16px;
+	height:16px;
+}
+
+.disabled { /* Text and background colour, medium red on light yellow */
+color:#55555d;
+background-color:#ffc;
+font-weight: lighter;
+
+}
+
+input[disabled='disabled'] { /* Text and background colour, medium red on light yellow */
+color:#55555d;
+background-color:#ffc;
+font-weight: lighter;
+
+}
