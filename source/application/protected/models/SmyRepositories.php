@@ -176,6 +176,20 @@ class SmyRepositories extends CActiveRecord
 	 */
 	public function beforeDelete()
 	{
+		// delete privilege-users associations
+		$userprivileges = $this->userPrivileges;
+		foreach( $userprivileges as $userprivilege )
+		{
+			$userprivilege->delete();
+		}
+		
+		//  delete privilege-group associations
+		$groupprivileges = $this->groupPrivileges;
+		foreach( $groupprivileges as $groupprivilege )
+		{
+			$groupprivilege->delete();
+		}		
+		
 		$beforeDelete = parent::beforeDelete();
 		if($this->subDesc != null )
 		{

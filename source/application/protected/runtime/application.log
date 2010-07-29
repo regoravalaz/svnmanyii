@@ -512,3 +512,98 @@ Stack trace:
 #13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
 #14 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CApplication->run()
 #15 {main} REQUEST_URI=/svnmanyii/index.php?r=smyUser/delete&id=22
+2010/07/28 22:12:21 [info] [application] array
+(
+    'SmyGroupPrivilege' => array
+    (
+        'groupid' => '5'
+        'repositoryid' => '12'
+        'access' => '0'
+    )
+    'reponame' => 'roger1'
+    'path' => '/'
+    'pathbackid' => ''
+    'selectPath' => ''
+)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyGroupPrivilegeController.php (70)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 22:12:21 [info] [application] array
+(
+    'parent' => '/'
+    'childs' => array()
+    'reponame' => 'roger1'
+)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyGroupPrivilegeController.php (71)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 22:12:30 [info] [application] array
+(
+    'SmyGroupPrivilege' => array
+    (
+        'groupid' => '5'
+        'repositoryid' => '2'
+        'access' => '0'
+    )
+    'reponame' => 'roger'
+    'path' => '/'
+    'pathbackid' => ''
+    'selectPath' => ''
+)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyGroupPrivilegeController.php (70)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 22:12:30 [info] [application] array
+(
+    'parent' => '/'
+    'childs' => array
+    (
+        '0' => 'test1'
+    )
+    'reponame' => 'roger'
+)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyGroupPrivilegeController.php (71)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 22:26:24 [info] [application] array
+(
+    'SmyGroupPrivilege' => array
+    (
+        'groupid' => '1'
+        'repositoryid' => '18'
+        'access' => '0'
+    )
+    'reponame' => 'UUUU'
+    'path' => '/'
+    'pathbackid' => ''
+    'selectPath' => ''
+)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyGroupPrivilegeController.php (70)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 22:26:24 [info] [application] array
+(
+    'parent' => '/'
+    'childs' => array()
+    'reponame' => 'UUUU'
+)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyGroupPrivilegeController.php (71)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 22:26:33 [info] [application] array
+(
+    'SmyGroupPrivilege' => array
+    (
+        'groupid' => '4'
+        'repositoryid' => '18'
+        'access' => '0'
+    )
+    'reponame' => 'UUUU'
+    'path' => '/'
+    'pathbackid' => ''
+    'selectPath' => ''
+)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyGroupPrivilegeController.php (70)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 22:26:33 [info] [application] array
+(
+    'parent' => '/'
+    'childs' => array()
+    'reponame' => 'UUUU'
+)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyGroupPrivilegeController.php (71)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)

@@ -315,10 +315,10 @@ class SmyUser extends CActiveRecord
 	public function beforeDelete()
 	{
 		// delete group-user associations
-		$groups = $this->usergroups;
-		foreach( $groups as $group )
+		$usergroups = $this->usergroups;
+		foreach( $usergroups as $usergroup )
 		{
-			$group->delete();
+			$usergroup->delete();
 		}
 		
 		//  delete privilege-user associations

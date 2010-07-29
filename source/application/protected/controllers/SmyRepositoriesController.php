@@ -109,8 +109,24 @@ class SmyRepositoriesController extends Controller
 	{
 		if(Yii::app()->request->isPostRequest)
 		{
-			// we only allow deletion via POST request
-			$this->loadModel()->delete();
+			$model = $this->loadModel();
+			$transaction = $model->getDbConnection()->beginTransaction();
+			try 
+			{			
+				// we only allow deletion via POST request
+				if( $model->delete() )
+				{
+					$transaction->commit();
+				}
+				else 
+				{
+					$transaction->rollBack();
+				}			
+			}
+			catch(CDbException $ex)
+			{
+				$transaction->rollBack();
+			}
 
 			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 			if(!isset($_GET['ajax']))

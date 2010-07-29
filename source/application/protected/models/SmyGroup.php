@@ -55,7 +55,9 @@ class SmyGroup extends CActiveRecord
 		return array(
 			'admin' => array(self::BELONGS_TO, 'SmyUser', 'adminid'),
 			'users'=>array(self::MANY_MANY, 'SmyUser',
-				                'svnmanager.usersgroups(userid, groupid)'),		
+				                'svnmanager.usersgroups(userid, groupid)'),	
+			'usergroups'=>array(self::HAS_MANY, 'SmyUserGroup', 'groupid'),
+			'groupprivileges'=>array(self::HAS_MANY, 'SmyGroupPrivilege', 'groupid'),	
 		);
 	}
 
@@ -113,6 +115,30 @@ class SmyGroup extends CActiveRecord
 	{
 		Yii::app()->repoHandler->rebuildAccessFile();
 	}	
+	
+	
+	/**
+	 * (non-PHPdoc)
+	 * @see db/ar/CActiveRecord::beforeDelete()
+	 */
+	public function beforeDelete()
+	{
+		// delete group-user associations
+		$usergroups = $this->usergroups;
+		foreach( $usergroups as $usergroup )
+		{
+			$usergroup->delete();
+		}
+		
+		//  delete privilege-group associations
+		$groupprivileges = $this->groupprivileges;
+		foreach( $groupprivileges as $groupprivilege )
+		{
+			$groupprivilege->delete();
+		}
+		
+		return parent::beforeDelete();
+	}
 	
 	/**
 	 * (non-PHPdoc)

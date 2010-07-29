@@ -65,22 +65,10 @@ class SmyUserController extends Controller
 		$model 	= new SmyUser;
 
 		if(isset($_POST['SmyUser']))
-		{
-			$transaction = $model->getDbConnection()->beginTransaction();
-			try 
-			{				
-				$model->attributes=$_POST['SmyUser'];
-				if($model->save())
-				{
-					$transaction->commit();
-					$this->redirect(array('view','id'=>$model->id));
-				}	
-			}
-			catch(CDbException $ex )
-			{
-				$model->addError("DB Error", $ex->getMessage());
-				$transaction->rollBack();
-			}
+		{			
+			$model->attributes=$_POST['SmyUser'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id));
 		}			
 
 		$this->render('create',array(
@@ -99,21 +87,9 @@ class SmyUserController extends Controller
 
 		if(isset($_POST['SmyUser']))
 		{
-			$transaction = $model->getDbConnection()->beginTransaction();
-			try 
-			{				
-				$model->attributes=$_POST['SmyUser'];			
-				if($model->save())
-				{
-					$transaction->commit();
-					$this->redirect(array('view','id'=>$model->id));
-				}	
-			}
-			catch(CDbException $ex )
-			{
-				$model->addError("DB Error", $ex->getMessage());
-				$transaction->rollBack();
-			}			
+			$model->attributes=$_POST['SmyUser'];			
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id));		
 		}
 
 		$this->render('update',array(
@@ -131,14 +107,18 @@ class SmyUserController extends Controller
 		if(Yii::app()->request->isPostRequest)
 		{
 			$model = $this->loadModel();
-			
 			$transaction = $model->getDbConnection()->beginTransaction();
-			
 			try 
 			{			
 				// we only allow deletion via POST request
-				$model->delete();				
-				$transaction->commit();
+				if( $model->delete() )
+				{
+					$transaction->commit();
+				}
+				else 
+				{
+					$transaction->rollBack();
+				}	
 			}
 			catch(CDbException $ex)
 			{
