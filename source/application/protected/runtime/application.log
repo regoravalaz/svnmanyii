@@ -1,265 +1,514 @@
-2010/07/27 15:33:53 [error] [php] fopen(/home/astarot/Documents/subversion/conf/authz) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: Permission denied (/home/astarot/Documents/SvnManYii/SvnManYii/application/protected/components/SmyRepoHandler.php:198)
+2010/07/28 18:30:21 [error] [system.db.CDbCommand] Error in executing SQL: INSERT INTO `svnmanager`.`users` (`name`, `password`, `email`, `admin`, `repositorygrants`, `svnserve_password`, `id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php (76)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 18:32:04 [error] [system.db.CDbCommand] Error in executing SQL: INSERT INTO `svnmanager`.`users` (`name`, `password`, `email`, `admin`, `repositorygrants`, `svnserve_password`, `id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php (76)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 18:32:22 [error] [system.db.CDbCommand] Error in executing SQL: INSERT INTO `svnmanager`.`users` (`name`, `password`, `email`, `admin`, `repositorygrants`, `svnserve_password`, `id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php (76)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 18:32:52 [error] [system.db.CDbCommand] Error in executing SQL: INSERT INTO `svnmanager`.`users` (`name`, `password`, `email`, `admin`, `repositorygrants`, `svnserve_password`, `id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php (76)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 18:33:09 [error] [system.db.CDbCommand] Error in executing SQL: INSERT INTO `svnmanager`.`users` (`name`, `password`, `email`, `admin`, `repositorygrants`, `svnserve_password`, `id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php (76)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 18:33:09 [error] [php] Missing argument 2 for CModel::addError(), called in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php on line 87 and defined (/home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CModel.php:355)
 Stack trace:
-#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SiteController->actionIndex()
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
+#1 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): SmyUserController->runAction()
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CAccessControlFilter->filter()
+#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): SmyUserController->filterAccessControl()
+#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter()
+#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): SmyUserController->runActionWithFilters()
+#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): SmyUserController->run()
+#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
+#11 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CWebApplication->run()
+REQUEST_URI=/svnmanyii/index.php?r=smyUser/create
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php (87)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 18:33:22 [error] [system.db.CDbCommand] Error in executing SQL: INSERT INTO `svnmanager`.`users` (`name`, `password`, `email`, `admin`, `repositorygrants`, `svnserve_password`, `id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php (76)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 18:34:06 [error] [system.db.CDbCommand] Error in executing SQL: INSERT INTO `svnmanager`.`users` (`name`, `password`, `email`, `admin`, `repositorygrants`, `svnserve_password`, `id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php (76)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 18:49:22 [error] [system.db.CDbCommand] Error in executing SQL: INSERT INTO `svnmanager`.`users` (`name`, `password`, `email`, `admin`, `repositorygrants`, `svnserve_password`, `id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php (74)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 21:22:47 [error] [exception.CException] exception 'CException' with message 'Property "SmyUser.userid" is not defined.' in /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(110): CComponent->__get('userid')
+#1 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveFinder.php(614): CActiveRecord->__get('userid')
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveFinder.php(485): CJoinElement->applyLazyCondition(Object(CJoinQuery), Object(SmyUser))
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveFinder.php(217): CJoinElement->lazyFind(Object(SmyUser))
+#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(240): CActiveFinder->lazyFind(Object(SmyUser))
+#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(108): CActiveRecord->getRelated('usergroups')
+#6 /home/astarot/Documents/SvnManYii/project/source/application/protected/models/SmyUser.php(318): CActiveRecord->__get('usergroups')
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1076): SmyUser->beforeDelete()
+#8 /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php(140): CActiveRecord->delete()
+#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyUserController->actionDelete()
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
+#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): CController->runAction(Object(CInlineAction))
+#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CFilter->filter(Object(CFilterChain))
+#14 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#17 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('delete')
+#19 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('smyUser/delete')
+#20 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
+#21 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CApplication->run()
+#22 {main} REQUEST_URI=/svnmanyii/index.php?r=smyUser/delete&id=22
+2010/07/28 21:23:53 [error] [php] Invalid argument supplied for foreach() (/home/astarot/Documents/SvnManYii/project/source/application/protected/models/SmyUser.php:319)
+Stack trace:
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyUserController->actionDelete()
 #1 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
-#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(278): SiteController->runAction()
-#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
-#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): SiteController->run()
-#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController()
-#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
-#7 /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php(13): CWebApplication->run()
-REQUEST_URI=/svnmanyii/index.php
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/components/SmyRepoHandler.php (198)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SiteController.php (68)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php (13)
-2010/07/27 15:34:14 [error] [php] fopen(/home/astarot/Documents/subversion/conf/authz) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: Permission denied (/home/astarot/Documents/SvnManYii/SvnManYii/application/protected/components/SmyRepoHandler.php:198)
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): SmyUserController->runAction()
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CAccessControlFilter->filter()
+#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): SmyUserController->filterAccessControl()
+#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter()
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): SmyUserController->runActionWithFilters()
+#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): SmyUserController->run()
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
+#12 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CWebApplication->run()
+REQUEST_URI=/svnmanyii/index.php?r=smyUser/delete&id=22
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/models/SmyUser.php (319)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php (140)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 21:24:22 [error] [php] Invalid argument supplied for foreach() (/home/astarot/Documents/SvnManYii/project/source/application/protected/models/SmyUser.php:319)
 Stack trace:
-#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SiteController->actionIndex()
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyUserController->actionDelete()
 #1 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
-#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(278): SiteController->runAction()
-#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
-#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): SiteController->run()
-#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController()
-#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
-#7 /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php(13): CWebApplication->run()
-REQUEST_URI=/svnmanyii/index.php
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/components/SmyRepoHandler.php (198)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SiteController.php (68)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php (13)
-2010/07/27 15:36:27 [error] [php] fopen(/home/astarot/Documents/subversion/conf/authz) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: Permission denied (/home/astarot/Documents/SvnManYii/SvnManYii/application/protected/components/SmyRepoHandler.php:199)
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): SmyUserController->runAction()
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CAccessControlFilter->filter()
+#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): SmyUserController->filterAccessControl()
+#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter()
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): SmyUserController->runActionWithFilters()
+#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): SmyUserController->run()
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
+#12 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CWebApplication->run()
+REQUEST_URI=/svnmanyii/index.php?r=smyUser/delete&id=22
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/models/SmyUser.php (319)
+in /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php (140)
+in /home/astarot/Documents/SvnManYii/project/source/application/index.php (13)
+2010/07/28 21:24:52 [error] [exception.CException] exception 'CException' with message 'null' in /home/astarot/Documents/SvnManYii/project/source/application/protected/models/SmyUser.php:319
 Stack trace:
-#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SiteController->actionIndex()
-#1 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
-#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(278): SiteController->runAction()
-#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
-#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): SiteController->run()
-#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController()
-#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
-#7 /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php(13): CWebApplication->run()
-REQUEST_URI=/svnmanyii/index.php
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/components/SmyRepoHandler.php (199)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SiteController.php (68)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php (13)
-2010/07/27 15:38:01 [error] [php] fopen(/home/astarot/Documents/subversion/conf/authz) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: Permission denied (/home/astarot/Documents/SvnManYii/SvnManYii/application/protected/components/SmyRepoHandler.php:198)
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1076): SmyUser->beforeDelete()
+#1 /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php(140): CActiveRecord->delete()
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyUserController->actionDelete()
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
+#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): CController->runAction(Object(CInlineAction))
+#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CFilter->filter(Object(CFilterChain))
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('delete')
+#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('smyUser/delete')
+#13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
+#14 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/svnmanyii/index.php?r=smyUser/delete&id=22
+2010/07/28 21:25:10 [error] [exception.CException] exception 'CException' with message ''ccccrr'' in /home/astarot/Documents/SvnManYii/project/source/application/protected/models/SmyUser.php:319
 Stack trace:
-#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SiteController->actionIndex()
-#1 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
-#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(278): SiteController->runAction()
-#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
-#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): SiteController->run()
-#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController()
-#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
-#7 /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php(13): CWebApplication->run()
-REQUEST_URI=/svnmanyii/index.php
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/components/SmyRepoHandler.php (198)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SiteController.php (68)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php (13)
-2010/07/27 16:01:10 [error] [exception.CException] exception 'CException' with message 'CWebApplication does not have a method named "repoHandler".' in /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CComponent.php:266
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1076): SmyUser->beforeDelete()
+#1 /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php(140): CActiveRecord->delete()
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyUserController->actionDelete()
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
+#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): CController->runAction(Object(CInlineAction))
+#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CFilter->filter(Object(CFilterChain))
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('delete')
+#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('smyUser/delete')
+#13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
+#14 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/svnmanyii/index.php?r=smyUser/delete&id=22
+2010/07/28 21:27:12 [error] [exception.CException] exception 'CException' with message 'Property "CBelongsToRelation.0" is not defined.' in /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CComponent.php:173
 Stack trace:
-#0 [internal function]: CComponent->__call('repoHandler', Array)
-#1 /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/models/SmyUser.php(221): CWebApplication->repoHandler()
-#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1014): SmyUser->afterSave()
-#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(724): CActiveRecord->update(NULL)
-#4 /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SmyUserController.php(91): CActiveRecord->save()
-#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyUserController->actionUpdate()
-#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
-#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): CController->runAction(Object(CInlineAction))
-#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
-#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CFilter->filter(Object(CFilterChain))
-#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
-#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
-#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1742): CComponent->__set('0', 'userid')
+#1 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(2083): CBaseActiveRelation->__construct('usergroups', 'SmyUserGroup', 'id', Array)
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(2064): CActiveRecordMetaData->addRelation('usergroups', Array)
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(353): CActiveRecordMetaData->__construct(Object(SmyUser))
+#4 /home/astarot/Documents/SvnManYii/project/source/application/protected/models/SmyUser.php(41): CActiveRecord::model('SmyUser')
+#5 /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php(192): SmyUser::model()
+#6 /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php(133): SmyUserController->loadModel()
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyUserController->actionDelete()
+#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
+#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): CController->runAction(Object(CInlineAction))
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CFilter->filter(Object(CFilterChain))
+#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#15 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('delete')
+#17 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('smyUser/delete')
+#18 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
+#19 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CApplication->run()
+#20 {main} REQUEST_URI=/svnmanyii/index.php?r=smyUser/delete&id=22
+2010/07/28 21:34:16 [error] [exception.CException] exception 'CException' with message 'Property "CHasManyRelation.0" is not defined.' in /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1742): CComponent->__set('0', 'userid')
+#1 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(2083): CBaseActiveRelation->__construct('usergroups', 'SmyUserGroup', 'id', Array)
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(2064): CActiveRecordMetaData->addRelation('usergroups', Array)
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(353): CActiveRecordMetaData->__construct(Object(SmyUser))
+#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveFinder.php(260): CActiveRecord::model('SmyUser')
+#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveFinder.php(51): CActiveFinder->buildJoinTree(Object(CJoinElement), 'users')
+#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(239): CActiveFinder->__construct(Object(SmyGroup), 'users')
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(108): CActiveRecord->getRelated('users')
+#8 /home/astarot/Documents/SvnManYii/project/source/application/protected/components/SmyRepoHandler.php(147): CActiveRecord->__get('users')
+#9 /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SiteController.php(68): SmyRepoHandler->rebuildAccessFile()
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SiteController->actionIndex()
+#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
+#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
 #13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
-#14 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('update')
-#15 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('smyUser/update')
+#14 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('')
+#15 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('')
 #16 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
-#17 /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php(13): CApplication->run()
-#18 {main} REQUEST_URI=/svnmanyii/index.php?r=smyUser/update&id=1
-2010/07/27 16:04:25 [error] [php] date() expects at least 1 parameter, 0 given (/home/astarot/Documents/SvnManYii/SvnManYii/application/protected/components/SmyRepoHandler.php:137)
+#17 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CApplication->run()
+#18 {main} REQUEST_URI=/svnmanyii/
+2010/07/28 21:34:23 [error] [exception.CException] exception 'CException' with message 'Property "CHasManyRelation.0" is not defined.' in /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CComponent.php:173
 Stack trace:
-#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1014): SmyUser->afterSave()
-#1 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(724): SmyUser->update()
-#2 /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SmyUserController.php(91): SmyUser->save()
-#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyUserController->actionUpdate()
-#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
-#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): SmyUserController->runAction()
-#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
-#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CAccessControlFilter->filter()
-#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): SmyUserController->filterAccessControl()
-#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter()
-#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
-#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): SmyUserController->runActionWithFilters()
-#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): SmyUserController->run()
-#13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController()
-#14 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
-#15 /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php(13): CWebApplication->run()
-REQUEST_URI=/svnmanyii/index.php?r=smyUser/update&id=1
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/components/SmyRepoHandler.php (137)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/models/SmyUser.php (221)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SmyUserController.php (91)
-2010/07/27 16:06:36 [error] [exception.CException] exception 'CException' with message 'CWebApplication does not have a method named "repoHandler".' in /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CComponent.php:266
-Stack trace:
-#0 [internal function]: CComponent->__call('repoHandler', Array)
-#1 /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/models/SmyGroup.php(104): CWebApplication->repoHandler()
-#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(985): SmyGroup->afterSave()
-#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(724): CActiveRecord->insert(NULL)
-#4 /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SmyGroupController.php(73): CActiveRecord->save()
-#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyGroupController->actionCreate()
-#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
-#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): CController->runAction(Object(CInlineAction))
-#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
-#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CFilter->filter(Object(CFilterChain))
-#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
-#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
-#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1742): CComponent->__set('0', 'userid')
+#1 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(2083): CBaseActiveRelation->__construct('usergroups', 'SmyUserGroup', 'id', Array)
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(2064): CActiveRecordMetaData->addRelation('usergroups', Array)
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(353): CActiveRecordMetaData->__construct(Object(SmyUser))
+#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveFinder.php(260): CActiveRecord::model('SmyUser')
+#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveFinder.php(51): CActiveFinder->buildJoinTree(Object(CJoinElement), 'users')
+#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(239): CActiveFinder->__construct(Object(SmyGroup), 'users')
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(108): CActiveRecord->getRelated('users')
+#8 /home/astarot/Documents/SvnManYii/project/source/application/protected/components/SmyRepoHandler.php(147): CActiveRecord->__get('users')
+#9 /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SiteController.php(68): SmyRepoHandler->rebuildAccessFile()
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SiteController->actionIndex()
+#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
+#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
 #13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
-#14 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('create')
-#15 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('smyGroup/create')
+#14 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('')
+#15 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('')
 #16 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
-#17 /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php(13): CApplication->run()
-#18 {main} REQUEST_URI=/svnmanyii/index.php?r=smyGroup/create
-2010/07/27 16:14:10 [info] [application] array
-(
-    'SmyGroupPrivilege' => array
-    (
-        'groupid' => '4'
-        'repositoryid' => '17'
-        'access' => '0'
-    )
-    'reponame' => 'testrepo2'
-    'path' => '/'
-    'pathbackid' => ''
-    'selectPath' => ''
-)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SmyGroupPrivilegeController.php (70)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php (13)
-2010/07/27 16:14:10 [info] [application] array
-(
-    'parent' => '/'
-    'childs' => array()
-    'reponame' => 'testrepo2'
-)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SmyGroupPrivilegeController.php (71)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php (13)
-2010/07/27 16:14:14 [info] [application] array
-(
-    'SmyGroupPrivilege' => array
-    (
-        'groupid' => '4'
-        'repositoryid' => '2'
-        'access' => '0'
-    )
-    'reponame' => 'roger'
-    'path' => '/'
-    'pathbackid' => ''
-    'selectPath' => ''
-)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SmyGroupPrivilegeController.php (70)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php (13)
-2010/07/27 16:14:14 [info] [application] array
-(
-    'parent' => '/'
-    'childs' => array()
-    'reponame' => 'roger'
-)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SmyGroupPrivilegeController.php (71)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php (13)
-2010/07/27 16:14:16 [info] [application] array
-(
-    'SmyGroupPrivilege' => array
-    (
-        'groupid' => '4'
-        'repositoryid' => '12'
-        'access' => '0'
-    )
-    'reponame' => 'roger1'
-    'path' => '/'
-    'pathbackid' => ''
-    'selectPath' => ''
-)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SmyGroupPrivilegeController.php (70)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php (13)
-2010/07/27 16:14:16 [info] [application] array
-(
-    'parent' => '/'
-    'childs' => array()
-    'reponame' => 'roger1'
-)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SmyGroupPrivilegeController.php (71)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php (13)
-2010/07/27 16:14:19 [info] [application] array
-(
-    'SmyGroupPrivilege' => array
-    (
-        'groupid' => '4'
-        'repositoryid' => '13'
-        'access' => '0'
-    )
-    'reponame' => 'test2'
-    'path' => '/'
-    'pathbackid' => ''
-    'selectPath' => ''
-)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SmyGroupPrivilegeController.php (70)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php (13)
-2010/07/27 16:14:19 [info] [application] array
-(
-    'parent' => '/'
-    'childs' => array
-    (
-        '0' => 'prueba1'
-        '1' => 'prueba2'
-        '2' => 'prueba3'
-    )
-    'reponame' => 'test2'
-)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SmyGroupPrivilegeController.php (71)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php (13)
-2010/07/27 16:14:21 [info] [application] array
-(
-    'SmyGroupPrivilege' => array
-    (
-        'groupid' => '4'
-        'repositoryid' => '13'
-        'access' => '0'
-    )
-    'reponame' => 'test2'
-    'path' => '/'
-    'pathbackid' => ''
-    'selectPath' => '/prueba1'
-)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SmyGroupPrivilegeController.php (70)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php (13)
-2010/07/27 16:14:21 [info] [application] array
-(
-    'parent' => '//prueba1'
-    'childs' => array
-    (
-        '0' => 'prueba4'
-    )
-    'reponame' => 'test2'
-)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SmyGroupPrivilegeController.php (71)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php (13)
-2010/07/27 17:36:33 [error] [system.db.CDbCommand] Error in executing SQL: DELETE FROM `svnmanager`.`groups` WHERE `svnmanager`.`groups`.`id`=3
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SmyGroupController.php (114)
-in /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php (13)
-2010/07/27 17:36:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`svnmanager`.`usersgroups`, CONSTRAINT `fk_constraint_usersgroups_2` FOREIGN KEY (`groupid`) REFERENCES `groups` (`id`))' in /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/CDbCommand.php:228
+#17 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CApplication->run()
+#18 {main} REQUEST_URI=/svnmanyii/
+2010/07/28 21:34:54 [error] [exception.CException] exception 'CException' with message ''ccccrr'' in /home/astarot/Documents/SvnManYii/project/source/application/protected/models/SmyUser.php:319
 Stack trace:
-#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1545): CDbCommand->execute()
-#1 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1078): CActiveRecord->deleteByPk('3')
-#2 /home/astarot/Documents/SvnManYii/SvnManYii/application/protected/controllers/SmyGroupController.php(114): CActiveRecord->delete()
-#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyGroupController->actionDelete()
-#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
-#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): CController->runAction(Object(CInlineAction))
-#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
-#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CFilter->filter(Object(CFilterChain))
-#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
-#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
-#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
-#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
-#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('delete')
-#13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('smyGroup/delete')
-#14 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
-#15 /home/astarot/Documents/SvnManYii/SvnManYii/application/index.php(13): CApplication->run()
-#16 {main} REQUEST_URI=/svnmanyii/index.php?r=smyGroup%2Fdelete&id=3&ajax=smy-group-grid
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1076): SmyUser->beforeDelete()
+#1 /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php(140): CActiveRecord->delete()
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyUserController->actionDelete()
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
+#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): CController->runAction(Object(CInlineAction))
+#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CFilter->filter(Object(CFilterChain))
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('delete')
+#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('smyUser/delete')
+#13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
+#14 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/svnmanyii/index.php?r=smyUser/delete&id=22
+2010/07/28 21:35:14 [error] [exception.CException] exception 'CException' with message 'array
+(
+    '0' => SmyUserGroup#1
+    (
+        [CActiveRecord:_md] => CActiveRecordMetaData#2
+        (
+            [tableSchema] => CMysqlTableSchema#3
+            (
+                [schemaName] => 'svnmanager'
+                [name] => 'usersgroups'
+                [rawName] => '`svnmanager`.`usersgroups`'
+                [primaryKey] => 'id'
+                [sequenceName] => ''
+                [foreignKeys] => array
+                (
+                    'userid' => array
+                    (
+                        '0' => 'users'
+                        '1' => 'id'
+                    )
+                    'groupid' => array
+                    (
+                        '0' => 'groups'
+                        '1' => 'id'
+                    )
+                )
+                [columns] => array
+                (
+                    'id' => CMysqlColumnSchema#4
+                    (
+                        [name] => 'id'
+                        [rawName] => '`id`'
+                        [allowNull] => false
+                        [dbType] => 'int(11)'
+                        [type] => 'integer'
+                        [defaultValue] => null
+                        [size] => 11
+                        [precision] => 11
+                        [scale] => null
+                        [isPrimaryKey] => true
+                        [isForeignKey] => false
+                        [CComponent:_e] => null
+                        [CComponent:_m] => null
+                    )
+                    'userid' => CMysqlColumnSchema#5
+                    (
+                        [name] => 'userid'
+                        [rawName] => '`userid`'
+                        [allowNull] => true
+                        [dbType] => 'int(11)'
+                        [type] => 'integer'
+                        [defaultValue] => 0
+                        [size] => 11
+                        [precision] => 11
+                        [scale] => null
+                        [isPrimaryKey] => false
+                        [isForeignKey] => true
+                        [CComponent:_e] => null
+                        [CComponent:_m] => null
+                    )
+                    'groupid' => CMysqlColumnSchema#6
+                    (
+                        [name] => 'groupid'
+                        [rawName] => '`groupid`'
+                        [allowNull] => true
+                        [dbType] => 'int(11)'
+                        [type] => 'integer'
+                        [defaultValue] => 0
+                        [size] => 11
+                        [precision] => 11
+                        [scale] => null
+                        [isPrimaryKey] => false
+                        [isForeignKey] => true
+                        [CComponent:_e] => null
+                        [CComponent:_m] => null
+                    )
+                )
+                [CComponent:_e] => null
+                [CComponent:_m] => null
+            )
+            [columns] => array
+            (
+                'id' => CMysqlColumnSchema#4(...)
+                'userid' => CMysqlColumnSchema#5(...)
+                'groupid' => CMysqlColumnSchema#6(...)
+            )
+            [relations] => array
+            (
+                'user' => CBelongsToRelation#7
+                (
+                    [joinType] => 'LEFT OUTER JOIN'
+                    [on] => ''
+                    [alias] => null
+                    [with] => array()
+                    [name] => 'user'
+                    [className] => 'SmyUser'
+                    [foreignKey] => 'userid'
+                    [select] => '*'
+                    [condition] => ''
+                    [params] => array()
+                    [group] => ''
+                    [join] => ''
+                    [having] => ''
+                    [order] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'group' => CBelongsToRelation#8
+                (
+                    [joinType] => 'LEFT OUTER JOIN'
+                    [on] => ''
+                    [alias] => null
+                    [with] => array()
+                    [name] => 'group'
+                    [className] => 'SmyGroup'
+                    [foreignKey] => 'groupid'
+                    [select] => '*'
+                    [condition] => ''
+                    [params] => array()
+                    [group] => ''
+                    [join] => ''
+                    [having] => ''
+                    [order] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+            )
+            [attributeDefaults] => array
+            (
+                'userid' => 0
+                'groupid' => 0
+            )
+            [CActiveRecordMetaData:_model] => SmyUserGroup#9
+            (
+                [CActiveRecord:_md] => CActiveRecordMetaData#2(...)
+                [CActiveRecord:_new] => false
+                [CActiveRecord:_attributes] => array()
+                [CActiveRecord:_related] => array()
+                [CActiveRecord:_c] => null
+                [CActiveRecord:_pk] => null
+                [CActiveRecord:_alias] => 't'
+                [CModel:_errors] => array()
+                [CModel:_validators] => null
+                [CModel:_scenario] => ''
+                [CComponent:_e] => null
+                [CComponent:_m] => null
+            )
+        )
+        [CActiveRecord:_new] => false
+        [CActiveRecord:_attributes] => array
+        (
+            'id' => '6'
+            'userid' => '22'
+            'groupid' => '3'
+        )
+        [CActiveRecord:_related] => array()
+        [CActiveRecord:_c] => null
+        [CActiveRecord:_pk] => '6'
+        [CActiveRecord:_alias] => 't'
+        [CModel:_errors] => array()
+        [CModel:_validators] => null
+        [CModel:_scenario] => 'update'
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)' in /home/astarot/Documents/SvnManYii/project/source/application/protected/models/SmyUser.php:319
+Stack trace:
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1076): SmyUser->beforeDelete()
+#1 /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php(140): CActiveRecord->delete()
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyUserController->actionDelete()
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
+#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): CController->runAction(Object(CInlineAction))
+#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CFilter->filter(Object(CFilterChain))
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('delete')
+#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('smyUser/delete')
+#13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
+#14 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/svnmanyii/index.php?r=smyUser/delete&id=22
+2010/07/28 21:35:37 [error] [exception.CException] exception 'CException' with message '1' in /home/astarot/Documents/SvnManYii/project/source/application/protected/models/SmyUser.php:319
+Stack trace:
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1076): SmyUser->beforeDelete()
+#1 /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php(140): CActiveRecord->delete()
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyUserController->actionDelete()
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
+#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): CController->runAction(Object(CInlineAction))
+#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CFilter->filter(Object(CFilterChain))
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('delete')
+#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('smyUser/delete')
+#13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
+#14 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/svnmanyii/index.php?r=smyUser/delete&id=22
+2010/07/28 21:35:49 [error] [exception.CException] exception 'CException' with message '1' in /home/astarot/Documents/SvnManYii/project/source/application/protected/models/SmyUser.php:324
+Stack trace:
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1076): SmyUser->beforeDelete()
+#1 /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php(140): CActiveRecord->delete()
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyUserController->actionDelete()
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
+#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): CController->runAction(Object(CInlineAction))
+#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CFilter->filter(Object(CFilterChain))
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('delete')
+#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('smyUser/delete')
+#13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
+#14 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/svnmanyii/index.php?r=smyUser/delete&id=22
+2010/07/28 21:36:40 [error] [exception.CException] exception 'CException' with message '0' in /home/astarot/Documents/SvnManYii/project/source/application/protected/models/SmyUser.php:328
+Stack trace:
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1076): SmyUser->beforeDelete()
+#1 /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php(140): CActiveRecord->delete()
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyUserController->actionDelete()
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
+#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): CController->runAction(Object(CInlineAction))
+#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CFilter->filter(Object(CFilterChain))
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('delete')
+#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('smyUser/delete')
+#13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
+#14 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/svnmanyii/index.php?r=smyUser%2Fdelete&id=22&ajax=smy-user-grid
+2010/07/28 21:36:50 [error] [exception.CException] exception 'CException' with message '0' in /home/astarot/Documents/SvnManYii/project/source/application/protected/models/SmyUser.php:328
+Stack trace:
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1076): SmyUser->beforeDelete()
+#1 /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php(140): CActiveRecord->delete()
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyUserController->actionDelete()
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
+#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): CController->runAction(Object(CInlineAction))
+#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CFilter->filter(Object(CFilterChain))
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('delete')
+#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('smyUser/delete')
+#13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
+#14 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/svnmanyii/index.php?r=smyUser/delete&id=22
+2010/07/28 21:37:08 [error] [exception.CException] exception 'CException' with message 'array()' in /home/astarot/Documents/SvnManYii/project/source/application/protected/models/SmyUser.php:328
+Stack trace:
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1076): SmyUser->beforeDelete()
+#1 /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php(140): CActiveRecord->delete()
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyUserController->actionDelete()
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
+#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): CController->runAction(Object(CInlineAction))
+#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CFilter->filter(Object(CFilterChain))
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('delete')
+#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('smyUser/delete')
+#13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
+#14 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/svnmanyii/index.php?r=smyUser/delete&id=22
+2010/07/28 21:40:25 [error] [exception.CException] exception 'CException' with message 'array()' in /home/astarot/Documents/SvnManYii/project/source/application/protected/models/SmyUser.php:328
+Stack trace:
+#0 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/db/ar/CActiveRecord.php(1076): SmyUser->beforeDelete()
+#1 /home/astarot/Documents/SvnManYii/project/source/application/protected/controllers/SmyUserController.php(140): CActiveRecord->delete()
+#2 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/actions/CInlineAction.php(32): SmyUserController->actionDelete()
+#3 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(300): CInlineAction->run()
+#4 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(129): CController->runAction(Object(CInlineAction))
+#5 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(1049): CFilter->filter(Object(CFilterChain))
+#7 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/filters/CFilterChain.php(126): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(283): CFilterChain->run()
+#10 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(324): CController->run('delete')
+#12 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/web/CWebApplication.php(121): CWebApplication->runController('smyUser/delete')
+#13 /home/astarot/Documents/Yii Framework/yii-1_1_3_r2247/yii/framework/base/CApplication.php(135): CWebApplication->processRequest()
+#14 /home/astarot/Documents/SvnManYii/project/source/application/index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/svnmanyii/index.php?r=smyUser/delete&id=22

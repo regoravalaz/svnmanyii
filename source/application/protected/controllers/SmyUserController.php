@@ -62,15 +62,27 @@ class SmyUserController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model = new SmyUser;
+		$model 	= new SmyUser;
 
 		if(isset($_POST['SmyUser']))
 		{
-			$model->attributes=$_POST['SmyUser'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
-		}
-		
+			$transaction = $model->getDbConnection()->beginTransaction();
+			try 
+			{				
+				$model->attributes=$_POST['SmyUser'];
+				if($model->save())
+				{
+					$transaction->commit();
+					$this->redirect(array('view','id'=>$model->id));
+				}	
+			}
+			catch(CDbException $ex )
+			{
+				$model->addError("DB Error", $ex->getMessage());
+				$transaction->rollBack();
+			}
+		}			
+
 		$this->render('create',array(
 			'model'=>$model,
 			'modelCurrentUser'=>$modelCurrentUser
@@ -87,11 +99,23 @@ class SmyUserController extends Controller
 
 		if(isset($_POST['SmyUser']))
 		{
-			$model->attributes=$_POST['SmyUser'];			
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			$transaction = $model->getDbConnection()->beginTransaction();
+			try 
+			{				
+				$model->attributes=$_POST['SmyUser'];			
+				if($model->save())
+				{
+					$transaction->commit();
+					$this->redirect(array('view','id'=>$model->id));
+				}	
+			}
+			catch(CDbException $ex )
+			{
+				$model->addError("DB Error", $ex->getMessage());
+				$transaction->rollBack();
+			}			
 		}
-		
+
 		$this->render('update',array(
 			'model'=>$model,
 			'modelCurrentUser'=>$modelCurrentUser
@@ -106,8 +130,21 @@ class SmyUserController extends Controller
 	{
 		if(Yii::app()->request->isPostRequest)
 		{
-			// we only allow deletion via POST request
-			$this->loadModel()->delete();
+			$model = $this->loadModel();
+			
+			$transaction = $model->getDbConnection()->beginTransaction();
+			
+			try 
+			{			
+				// we only allow deletion via POST request
+				$model->delete();				
+				$transaction->commit();
+			}
+			catch(CDbException $ex)
+			{
+				$transaction->rollBack();
+			}
+
 
 			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 			if(!isset($_GET['ajax']))

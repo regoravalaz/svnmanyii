@@ -76,6 +76,8 @@ class SmyUser extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			"usergroups"=> array(self::HAS_MANY, 'SmyUserGroup', 'userid'),
+			"userprivileges"=> array(self::HAS_MANY, 'SmyUserPrivilege', 'userid'),
 		);
 	}
 
@@ -209,8 +211,7 @@ class SmyUser extends CActiveRecord
 		// update other attributes differentes to name and password
 		return  $beforeSave;
 	
-	}	
-	
+	}
 	
 	/**
 	 * (non-PHPdoc)
@@ -307,6 +308,28 @@ class SmyUser extends CActiveRecord
 	
 	
 	
+	/**
+	 * (non-PHPdoc)
+	 * @see db/ar/CActiveRecord::beforeDelete()
+	 */
+	public function beforeDelete()
+	{
+		// delete group-user associations
+		$groups = $this->usergroups;
+		foreach( $groups as $group )
+		{
+			$group->delete();
+		}
+		
+		//  delete privilege-user associations
+		$userprivileges = $this->userprivileges;
+		foreach( $userprivileges as $userprivilege )
+		{
+			$userprivilege->delete();
+		}
+		
+		return parent::beforeDelete();
+	}
 	
 	
 	
