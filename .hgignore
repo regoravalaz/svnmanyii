@@ -3,3 +3,4 @@ syntax: glob
 ./source/.settings* #ignore settings eclipse projects
 ./source/.buildpath* #ignore settings eclipse projects
 ./source/.project*  #ignore settings eclipse projects
+./source/application/assets*  #ignore settings eclipse projects
