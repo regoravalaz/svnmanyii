@@ -1,0 +1,24 @@
+<?php
+return array (
+  'admin' => 
+  array (
+    'type' => 2,
+    'description' => 'Administrative Operations',
+    'bizRule' => NULL,
+    'data' => NULL,
+    'assignments' => 
+    array (
+      ),
+    ),
+
+  'single' => 
+  array (
+    'type' => 2,
+    'description' => 'Single Operations',
+    'bizRule' => NULL,
+    'data' => NULL,
+    'assignments' => 
+    array (
+    ),
+  ),
+);
