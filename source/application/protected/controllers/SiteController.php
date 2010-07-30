@@ -42,7 +42,15 @@ class SiteController extends Controller
 			throw new CException($repoHandler->Error);
 		}**/
 
+	
+//		$mail = Yii::app()->mail;
+		$message = new Message;
+		$message->setBody('Message content here with HTML', 'text/html');
+		$message->subject = 'My Subject';
+		$message->addTo('roger.zavala@gmail.com');
+		$message->from = 'roger.zavala@koiosoft.com';//Yii::app()->params['adminEmail'];
 		
+		Yii::app()->mail->send($message);
 		/**
 		 * Unit test for folder list
 		 */

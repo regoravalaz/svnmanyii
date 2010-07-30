@@ -33,7 +33,7 @@
 		<?php
 			if( Yii::app()->user->checkAccess('admin') )
 			{
-				$this->widget('application.components.JQuerySlideTopMenu.JQuerySlideTopMenu', 
+				$this->widget('ext.JQuerySlideTopMenu.JQuerySlideTopMenu', 
 				
 				array( 'items'=>array(  array('label'=>'Home', 'url'=>array('site/index')),
 				
@@ -85,7 +85,7 @@
 			else if( !Yii::app()->user->checkAccess('admin') && Yii::app()->user->checkAccess('single') )
 			{
 				
-				$this->widget('application.components.JQuerySlideTopMenu.JQuerySlideTopMenu', 
+				$this->widget('ext.JQuerySlideTopMenu.JQuerySlideTopMenu', 
 					array( 'items'=>array(  
 						array('label'=>'Home', 'url'=>array('site/index')),
 						array('label'=>'Users', 'url'=>array('smyUser/view&id=' . Yii::app()->user->id) ),
@@ -105,7 +105,7 @@
 			else 
 			{
 				
-			$this->widget('application.components.JQuerySlideTopMenu.JQuerySlideTopMenu', 
+			$this->widget('ext.JQuerySlideTopMenu.JQuerySlideTopMenu', 
 				array( 'items'=>array(  
 					array('label'=>'Home', 'url'=>array('site/index')),
 				  	array('label'=>'Login', 'url'=>array('site/login')),
