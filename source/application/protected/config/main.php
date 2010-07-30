@@ -47,7 +47,7 @@ return array(
 			'class'				=>'ext.mail.Mail',
 			'transportType' 	=> 'smtp',
 			'transportOptions'	=> array(
-										'host'=>'xxx,
+										'host'=>'xxx',
 										'encryption'=>'xx',
 										'port'=>'xxx',
 										'username'=>'xx',									
