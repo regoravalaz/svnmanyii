@@ -37,14 +37,14 @@ color: white;
 }
 
 .jqueryslidemenu ul li a:hover{
-background: #c7c77f; /*tab link background during hover state*/
-color: #485870;
+background: #D1E3FF; /*tab link background during hover state*/
+color: #525964;
 
 }
 
 .jqueryslidemenu ul li a.active {
-background: #809dc8;
-color: white;
+background: #facd44;
+color: #485870;
 }
 	
 /*1st sub level menu*/
@@ -77,8 +77,8 @@ border-bottom: 1px solid gray;
 }
 
 .jqueryslidemenuz ul li ul li a:hover{ /*sub menus hover style*/
-background: #eff9ff;
-color: black;
+background: #facd44;
+color: #4D4600;
 }
 
 /* ######### CSS classes applied to down and right arrow images  ######### */
