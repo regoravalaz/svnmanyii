@@ -52,6 +52,13 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_x="0 : 0.5 : 1"
        sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2849"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -187,6 +194,51 @@
        id="path3666-8"
        d="m 224.22655,233.38763 c 0.50374,-0.0227 1.01456,0.10306 1.51757,0.044 0.27154,-0.0319 0.53925,-0.12886 0.80956,-0.18416 0.83891,-0.17113 1.67964,-0.31443 2.51943,-0.47219 5.51385,-1.44672 11.0731,-2.13359 16.63895,-2.59533 10.1449,-0.58255 20.29777,-0.52172 30.4469,-0.51379 13.0507,0.0414 26.10139,0.0733 39.15212,0.0766 10.43868,-0.0173 20.87756,-0.0658 31.31522,-0.33231 0.87162,-0.0301 1.74323,-0.0604 2.61485,-0.0906 0,0 -2.93047,3.689 -2.93047,3.689 l 0,0 c -0.82343,-0.0305 -1.64685,-0.061 -2.47029,-0.0913 -10.25564,-0.27705 -20.51265,-0.32449 -30.76941,-0.35491 -13.09402,-0.0104 -26.18811,-0.0156 -39.28203,0.0889 -10.26433,0.10409 -20.53448,0.14116 -30.78961,0.98273 -5.69594,0.60169 -11.38164,1.45554 -17.01159,3.12351 -1.68699,0.38269 -3.36939,0.88242 -5.07651,0.80342 0,0 3.31531,-4.17352 3.31531,-4.17352 z"
        inkscape:export-filename="/home/astarot/Documents/SvnManYii/project/arts/LogoDarkSvnManYii.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:#485870;fill-opacity:1;stroke:none"
+       id="rect2866-5-6"
+       width="133.47656"
+       height="51.865891"
+       x="191.11888"
+       y="300.00067"
+       inkscape:export-filename="/home/astarot/Documents/SvnManYii/project/arts/LogoWebDarkSvnManYii.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:27.8689003px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#facd44;fill-opacity:1;stroke:none;font-family:Purisa;-inkscape-font-specification:AlArabiya Bold"
+       x="283.0022"
+       y="332.03104"
+       id="text2862-6-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/astarot/Documents/SvnManYii/project/arts/LogoWebDarkSvnManYii.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2864-3-9"
+         x="283.0022"
+         y="332.03104">Yii</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:23.15301323px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:cmmi10;-inkscape-font-specification:cmmi10 Bold Italic"
+       x="194.63066"
+       y="331.15106"
+       id="text2868-9-4"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/home/astarot/Documents/SvnManYii/project/arts/LogoWebDarkSvnManYii.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2870-4-8"
+         x="194.63066"
+         y="331.15106">SvnMan</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#7d9cc2;stroke-width:0.20372364;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3666-8-1"
+       d="m 196.61273,341.76442 c 0.50374,-0.0227 1.01456,0.10306 1.51757,0.044 0.27154,-0.0319 0.53925,-0.12886 0.80956,-0.18416 0.83891,-0.17113 1.67964,-0.31443 2.51943,-0.47219 5.51385,-1.44672 11.0731,-2.13359 16.63895,-2.59533 10.1449,-0.58255 20.29777,-0.52172 30.4469,-0.51379 13.0507,0.0414 26.10139,0.0733 39.15212,0.0766 10.43869,-0.0173 20.87757,-0.0658 31.31523,-0.33231 0.87162,-0.0301 1.74323,-0.0604 2.61485,-0.0906 0,0 -2.93047,3.689 -2.93047,3.689 l 0,0 c -0.82343,-0.0305 -1.64685,-0.061 -2.47029,-0.0913 -10.25564,-0.27705 -20.51265,-0.32449 -30.76942,-0.35491 -13.09402,-0.0104 -26.18811,-0.0156 -39.28203,0.0889 -10.26433,0.10409 -20.53448,0.14116 -30.78961,0.98273 -5.69594,0.60169 -11.38164,1.45554 -17.01159,3.12351 -1.68699,0.38269 -3.36939,0.88242 -5.07651,0.80342 0,0 3.31531,-4.17352 3.31531,-4.17352 z"
+       inkscape:export-filename="/home/astarot/Documents/SvnManYii/project/arts/LogoWebDarkSvnManYii.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
   </g>

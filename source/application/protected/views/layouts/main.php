@@ -22,10 +22,10 @@
 
 <div class="container" id="page">
 
-	<div id="header">
+	<div id="header" style="background-color:#485870;">
 		<!-- header -->
 		<!--  <div id="logo">SMY&nbsp;-&nbsp;<?php echo CHtml::encode(Yii::app()->name); ?></div>-->
-		<img src="images/logoSvnManYii.png" alt=""  style="padding:5px;"/>
+		<img src="images/LogoWebDarkSvnManYii.png" alt=""  style="padding:0px;"/>
 	</div>
 		<?php
 		?>
