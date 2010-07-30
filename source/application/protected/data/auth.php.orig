@@ -2,7 +2,7 @@
 return array (
   'admin' => 
   array (
-    'type' => 2,
+    'type' => CAuthItem::TYPE_ROLE,
     'description' => 'Administrative Operations',
     'bizRule' => NULL,
     'data' => NULL,
@@ -13,7 +13,7 @@ return array (
 
   'single' => 
   array (
-    'type' => 2,
+    'type' => CAuthItem::TYPE_ROLE,
     'description' => 'Single Operations',
     'bizRule' => NULL,
     'data' => NULL,

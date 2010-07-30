@@ -23,14 +23,52 @@
 <div class="container" id="page">
 
 	<div id="header">
-		<div id="logo">SMY&nbsp;-&nbsp;<?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
-
-	<div id="mainmenu">
+		<!-- header -->
+		<!--  <div id="logo">SMY&nbsp;-&nbsp;<?php echo CHtml::encode(Yii::app()->name); ?></div>-->
+		<img src="images/logoSvnManYii.png" alt=""  style="padding:5px;"/>
+	</div>
+		<?php
+		?>
+	<div >
 		<?php
 			if( Yii::app()->user->checkAccess('admin') )
 			{
-				$this->widget('zii.widgets.CMenu',array(
+				$this->widget('application.components.JQuerySlideTopMenu.JQuerySlideTopMenu', 
+				
+				array( 'items'=>array(  array('label'=>'Home', 'url'=>array('site/index')),
+				
+								        array('label'=>'Repositories', 'url'=>'#', 'subs'=>array(
+								                array('label'=>'Add New', 'url'=>array('/smyRepositories/create')),
+								                array('label'=>'List', 'url'=>array('/smyRepositories')),
+								                array('label'=>'Manage', 'url'=>array('/smyRepositories/admin')),	
+								                array('label'=>'Privileges', 'url'=>'#','subs'=>array(							                
+									                array('label'=>'Groups', 'url'=>array('/smyGroupPrivilege')),
+									                array('label'=>'Users', 'url'=>array('/smyUserPrivilege')),
+								                ) ),
+								            ), 'visible'=>!Yii::app()->user->isGuest),
+								            
+								        array('label'=>'Groups', 'url'=>'#', 'subs'=>array(
+								        		array('label'=>'Add New', 'url'=>array('/smyGroup/create')),
+								                array('label'=>'List', 'url'=>array('/smyGroup')),
+								                array('label'=>'Manage', 'url'=>array('/smyGroup/admin')),
+								                array('label'=>'Users by Group', 'url'=>array('/smyUserGroup')),
+								                array('label'=>'Repositories Privileges', 'url'=>array('/smyGroupPrivilege')),
+								        	), 'visible'=>!Yii::app()->user->isGuest),
+								        	
+								        array('label'=>'Users', 'url'=>'#', 'subs'=>array(
+								        		array('label'=>'Add New', 'url'=>array('/smyUser/create')),
+								                array('label'=>'List', 'url'=>array('/smyUser')),
+								                array('label'=>'Manage', 'url'=>array('/smyUser/admin')),
+								                array('label'=>'Users by Group', 'url'=>array('/smyUserGroup')),
+								                array('label'=>'Repositories Privileges', 'url'=>array('/smyUserPrivilege')),
+								        	), 'visible'=>!Yii::app()->user->isGuest),
+								        	
+								        array('label'=>'My profile', 'url'=>array('smyUser/view&id='. Yii::app()->user->id), 'visible'=>!Yii::app()->user->isGuest),
+										array('label'=>'Login', 'url'=>array('site/login'), 'visible'=>Yii::app()->user->isGuest),
+										array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+								    ),
+				));
+				/*$this->widget('zii.widgets.CMenu',array(
 					'items'=>array(
 						array('label'=>'Home', 				'url'=>array('/site/index')),
 						array('label'=>'User Privileges', 	'url'=>array('/smyUserPrivilege')),
@@ -42,27 +80,43 @@
 						array('label'=>'Login', 			'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 						array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 					),
-				));
+				));*/
 			}
 			else if( !Yii::app()->user->checkAccess('admin') && Yii::app()->user->checkAccess('single') )
 			{
-				$this->widget('zii.widgets.CMenu',array(
+				
+				$this->widget('application.components.JQuerySlideTopMenu.JQuerySlideTopMenu', 
+					array( 'items'=>array(  
+						array('label'=>'Home', 'url'=>array('site/index')),
+						array('label'=>'Users', 'url'=>array('smyUser/view&id=' . Yii::app()->user->id) ),
+						array('label'=>'Login', 'url'=>array('site/login'), 'visible'=>Yii::app()->user->isGuest),						
+					  	array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+					)
+				));				
+				/**$this->widget('zii.widgets.CMenu',array(
 					'items'=>array(
 						array('label'=>'Home', 	'url'=>array('/site/index')),
 						array('label'=>'Users', 'url'=>array('/smyUser/view&id=' . Yii::app()->user->id) ),
 						array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-						array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+						array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 					),
-				));
+				));**/
 			}			
 			else 
 			{
-				$this->widget('zii.widgets.CMenu',array(
+				
+			$this->widget('application.components.JQuerySlideTopMenu.JQuerySlideTopMenu', 
+				array( 'items'=>array(  
+					array('label'=>'Home', 'url'=>array('site/index')),
+				  	array('label'=>'Login', 'url'=>array('site/login')),
+				)
+			));
+				/*$this->widget('zii.widgets.CMenu',array(
 					'items'=>array(
 						array('label'=>'Home', 	'url'=>array('/site/index')),
 						array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest)
 					),
-				));
+				));*/
 			} 
 		?>
 	</div><!-- mainmenu -->

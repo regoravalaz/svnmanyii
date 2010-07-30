@@ -314,6 +314,14 @@ class SmyUser extends CActiveRecord
 	 */
 	public function beforeDelete()
 	{
+		// check exist how group owner
+		if( SmyGroup::model()->find('adminid=:userid', array(':userid'=>$this->id)) )
+		{
+			$this->addError("id", "There are groups that have the user as owner, you must upgrade these groups first." );
+			return false;
+		}
+		
+		
 		// delete group-user associations
 		$usergroups = $this->usergroups;
 		foreach( $usergroups as $usergroup )
